@@ -1,0 +1,98 @@
+.resume-container{
+    position: relative;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 70px 60px;
+    padding-bottom: 60px;
+    .resume-header{
+        margin-top: 25px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        left: 50%;
+        top: 14%;
+        letter-spacing: 10px;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+        background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s infinite linear;
+        animation-fill-mode: forwards;
+        -webkit-text-size-adjust: none;
+        white-space: nowrap;
+        font-family: monospace;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .resume-content{
+        display: flex;
+        margin-top: 12%;
+        .progress-container{
+            width:40%;
+            .progress-bar{
+                margin-bottom: 20px;
+                .progress-bar-header{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                }
+                .progress{
+                    background: rgba(255,255,255,0.1);
+                    justify-content: flex-start;
+                    border-radius: 100px;
+                    align-items: center;
+                    position: relative;
+                    padding: 0 5px;
+                    display: flex;
+                    height: 40px;
+                    width: 450px;
+                    .progress-value{
+                        box-shadow: 0 10px 40px -10px #fff;
+                        border-radius: 100px;
+                        background: #fff;
+                        height: 30px;
+                        width: 0;
+                    }
+                    .html{
+                        animation: loadhtml 3s normal forwards;
+                    }
+                    .css{
+                        animation: loadcss 3s normal forwards;
+                    }
+                    .javascript{
+                        animation: loadjavascript 3s normal forwards;
+                    }
+                    .react{
+                        animation: loadreact 3s normal forwards;
+                    }
+                }
+            }
+            
+        }
+        .skill-container{
+            margin-left: 10%;
+            background-color: black;
+            padding: 20px 20px;
+            border-radius: 10px;
+            width: 100%;
+            .skill-content{
+                display: flex;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: left;
+                .skill-key{
+                    font-size: 18px;
+                    width: 50%;
+                }
+                .skill-value{
+                    color: #aba5a5;
+                    font-size: 18px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

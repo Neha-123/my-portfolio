@@ -1,0 +1,23 @@
+.scroll-up{
+  padding: 12px 12px;
+  background-color: brown;
+  color: white;
+  position: fixed;
+  top:80%;
+  right: 6%;
+  z-index: 9999;
+  border-radius: 25px;
+  transition: background-color 1s;
+  .arrow-image{
+    width:20px
+  }
+  
+  &:hover{
+      background-color: #560a0a;
+  }
+  
+}
+
+html {
+    scroll-behavior: smooth;
+  }

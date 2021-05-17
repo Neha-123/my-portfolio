@@ -1,0 +1,34 @@
+.header-container{
+    background-color: #212020;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    color:white;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    display: flex;
+        .header-name{
+            display: inline;
+        }
+        .header-content{
+            display: flex;
+            align-items: baseline;
+            .header-items{
+                margin-right: 20px;
+                cursor: pointer;
+                text-decoration: none;
+                color: white;
+                transition: color 1s;
+                &:hover{
+                    color:rgb(158, 93, 93);
+                }
+            }
+            .active-items {
+                color: brown;
+            }
+        }
+    
+}

@@ -1,0 +1,111 @@
+.about-background{
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 55px 60px;
+    padding-bottom: 60px;
+    .about-header{
+        margin-top: 15px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        left: 50%;
+        top: 14%;
+        letter-spacing: 10px;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+        background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s infinite linear;
+        animation-fill-mode: forwards;
+        -webkit-text-size-adjust: none;
+        white-space: nowrap;
+        font-family: monospace;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .profile-container{
+        display: flex;
+        margin-top: 12%;
+        justify-content: space-between;
+        .profile-image{
+            height: 340px;
+            object-fit: contain;
+            opacity: 0;
+        }
+        .profile-image-animation{
+            opacity: 1;
+            animation-name: slideright;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .profile-content{
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            text-align: left;
+            font-size: 25px;
+            .about-content{
+                display: flex;
+                margin-bottom: 20px;
+                .about-key{
+                    width: 20%;
+                    font-size: 18px;
+                }
+                .about-value{
+                    color: #aba5a5;
+                    font-size: 18px;
+                }
+            }
+            .about-profile{
+                color:brown;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                letter-spacing: 10px;
+                font-weight: 600;
+            }
+            .about-profile-content{
+                font-size: 18px;
+                color: #aba5a5;
+            }
+        }
+        .profile-content-animation {
+            opacity: 1;
+            animation-name: slideLeft;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+    .download-resume{
+        opacity: 0;
+        margin-top: 30px;
+        width: 269px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color:brown;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 1s;
+        &:hover{
+            background-color: #560a0a;
+        }
+        
+    }
+    .download-animation{
+        opacity: 1;
+        animation-name: slideLeft;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
